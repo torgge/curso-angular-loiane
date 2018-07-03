@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosComponent implements OnInit {
 
-  nomePortal = `Portal do Angular`
+  nomePortal: string
+  cursos: any
 
-  constructor() { }
+  constructor() {
+    this.nomePortal = `Portal do Angular`
+    this.cursos = ;
+  }
 
   ngOnInit() {
   }
