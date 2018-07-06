@@ -5,7 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class CursosService {
 
-  constructor() { }
+  private cursos = [];
 
-  getCuros() { return [`Java`, `Angular`, `Delphi`];}
+  constructor () {
+    this.cursos = ["JAVA", "DELPHI", "PHP"];
+  }
+
+  getCursos () {
+    return this.cursos;
+  }
 }
